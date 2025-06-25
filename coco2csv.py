@@ -38,13 +38,17 @@ def coco2csv(coco_file, csv_file):
     annotations_csv = annotations_csv.replace(np.nan, '', regex=True)
 
     colnames = ["file_name","height","width","x1","y1","x2","y2","category_id"]
+    #TODO 获取"file_name","height","width","x1","y1","x2","y2","category_id"等数据
     annotations_csv = annotations_csv[colnames]
 
     annotations_csv.to_csv(path_or_buf=csv_file, index=False, header=True, columns=colnames)
     
 if __name__=="__main__":
     
-    coco_dir="train"
-    csv_file=os.path.join(coco_dir,f"{coco_dir}.csv")
-    coco_file=get_coco_file_path(data_dir=coco_dir)
-    coco2csv(coco_file=coco_file,csv_file=csv_file)
+    coco_dirs=["train","test","valid"]
+    
+    for coco_dir in coco_dirs:
+        coco_dir=coco_dir
+        csv_file=os.path.join(coco_dir,f"{coco_dir}.csv")
+        coco_file=get_coco_file_path(data_dir=coco_dir)
+        coco2csv(coco_file=coco_file,csv_file=csv_file)
