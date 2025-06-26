@@ -37,8 +37,8 @@ def coco2csv(coco_file, csv_file):
     annotations_csv = pd.merge(annotations, images, on=['image_id'], how='right')
     annotations_csv = annotations_csv.replace(np.nan, '', regex=True)
 
-    colnames = ["file_name","height","width","x1","y1","x2","y2","category_id"]
-    #TODO 获取"file_name","height","width","x1","y1","x2","y2","category_id"等数据
+    colnames = ["file_name","height","width","x1","y1","x2","y2","category_id","iscrowd"]
+    #TODO 获取"file_name","height","width","x1","y1","x2","y2","category_id","iscrowd"等数据
     annotations_csv = annotations_csv[colnames]
 
     annotations_csv.to_csv(path_or_buf=csv_file, index=False, header=True, columns=colnames)
