@@ -1,4 +1,3 @@
-/train
-/valid
-/test
+*.jpg
 /__pycache__
+/model

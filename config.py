@@ -2,7 +2,15 @@ import os
 
 COCO_FILE=os.path.join("train","_annotations.coco.json")
 CATEGORIES_JSON=os.path.join("categories.json")
-NUM_EPOCHS=20
+NUM_EPOCHS=40
+BEST_FASTERRCNN_STATIC_DICT="./model/bestfasterRcnn.pth"
+DEFAULT_FASTERRCNN_STATIC_DICT="./model/fasterrcnn_resnet50_fpn_coco-258fb6c6.pth"
+NUM_CLASSES=17
+BATCH_SIZE=12
+
+#TODO 学习率
+MODIFY_LEARNING=5e-3
+COMMON_LEARNING=1e-3
 
 COLORS = [
     "#8470FF",  # 原色1: 蓝紫色
