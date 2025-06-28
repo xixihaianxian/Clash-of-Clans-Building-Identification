@@ -82,7 +82,7 @@ project/
 2. 真实标注
    ![真实标注](./example/true.png)
 3. 预测标注
-   ![预测标注](./example/false.png)
+   ![预测标注](./example/predict.png)
 4. 从图中可以明显的看出预测和真实还是有较大的出入，模型和数据还需要一些改进。
 
 ## 📦 环境要求
