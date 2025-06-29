@@ -59,7 +59,7 @@ project/
 ├── 🖼️ image2.jpg
 └── 📄 _annotations.coco.json
 ```
-数据来源 [Clash of Clans Computer Vision Project](https://universe.roboflow.com/find-this-base/clash-of-clans-vop4y),如果无法打开可以联系[本人邮箱](1669584651@qq.com)
+数据来源 [Clash of Clans Computer Vision Project](https://universe.roboflow.com/find-this-base/clash-of-clans-vop4y),如果无法打开可以联系`本人邮箱`   **1669584651@qq.com**
 
 ### 2. 训练模型
 ```bash
