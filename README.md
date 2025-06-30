@@ -105,3 +105,4 @@ project/
 
 - [ ] 更多数据增强技术
 - [ ] 支持YOLO/SSD等模型
+- [x] 额外添加[简单调用YOLO模型进行对比](https://github.com/xixihaianxian/Yolo-Clash-of-Clans)
